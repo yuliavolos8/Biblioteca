@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
-//practicando comandos2
+//practicando comandos2 remoto
 public class BibliotecaPublica {
 
 	private final static int AFORO_MAXIMO = 1000;
