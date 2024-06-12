@@ -36,8 +36,8 @@ public class Historial {
 		historial.getCantLibrosPrestados();
 		System.out.println("dias pasados" + cant);
 		System.out.println(devolver);
-		Login L = new Login();
-		L.show();
+		
+		
 	}
 
 	public int getCantLibrosPrestados() {
