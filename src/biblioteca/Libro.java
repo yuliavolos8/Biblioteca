@@ -83,7 +83,7 @@ public class Libro {
 		return ANIO_MAX_ANTIGUEDAD;
 	}
 
-	// dejar rango como constantes entre atributos??
+	
 	public boolean setAnio(int anio) throws IllegalArgumentException {
 		boolean valido = false;
 		if (Year.now().getValue() - anio <= ANIO_MAX_ANTIGUEDAD) {

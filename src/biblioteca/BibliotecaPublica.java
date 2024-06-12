@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-
 //practicando comandos2 remoto
 
 public class BibliotecaPublica {
@@ -29,23 +28,30 @@ public class BibliotecaPublica {
 	}
 
 	public static void main(String[] args) throws Exception {
-		/*
-		 * Libro libro2 = new Libro(2, 1993, " Tomas Perez", " Anochecer"); Libro libro3
-		 * = new Libro(4, 2003, " ANA fernandez", " Anochecer"); Libro libro1 = new
-		 * Libro(1, 1999, " Maria Blanco", " Anochecer"); Libro libro4 = new Libro(3,
-		 * 2023, " Ana ANACARDO", " MAR y luna"); Libro libro5 = new Libro(5, 2010,
-		 * " Maria Blanco", " ANA kARENINA"); BibliotecaPublica b = new
-		 * BibliotecaPublica(); b.ADDlibro(libro1); System.out.println("aniadimos " +
-		 * libro1); b.ADDlibro(libro2); System.out.println("aniadimos " + libro2);
-		 * b.ADDlibro(libro3); System.out.println("aniadimos " + libro3);
-		 * b.ADDlibro(libro5); System.out.println("aniadimos " + libro5);
-		 * b.ADDlibro(libro4); System.out.println("aniadimos " + libro4);
-		 * b.eliminarLibro(); System.out.println("eliminar libro antiguo de " + b);
-		 * 
-		 * Usuario us1 = new Usuario("48768328W", "MARIA", " Gomez", "632074700");
-		 * boolean esPosible = b.registrarUsuario(us1);
-		 * System.out.println("registrar usuario " + us1 + esPosible);
-		 */
+
+		Libro libro2 = new Libro(2, 1993, " Tomas Perez", " Anochecer");
+		Libro libro3 = new Libro(4, 2003, " ANA fernandez", " Anochecer");
+		Libro libro1 = new Libro(1, 1999, " Maria Blanco", " Anochecer");
+		Libro libro4 = new Libro(3, 2023, " Ana ANACARDO", " MAR y luna");
+		Libro libro5 = new Libro(5, 2010, " Maria Blanco", " ANA kARENINA");
+		BibliotecaPublica b = new BibliotecaPublica();
+		b.ADDlibro(libro1);
+		System.out.println("aniadimos " + libro1);
+		b.ADDlibro(libro2);
+		System.out.println("aniadimos " + libro2);
+		b.ADDlibro(libro3);
+		System.out.println("aniadimos " + libro3);
+		b.ADDlibro(libro5);
+		System.out.println("aniadimos " + libro5);
+		b.ADDlibro(libro4);
+		System.out.println("aniadimos " + libro4);
+		b.eliminarLibro();
+		System.out.println("eliminar libro antiguo de " + b);
+
+		Usuario us1 = new Usuario("48768328W", "MARIA", " Gomez", "632074700");
+		boolean esPosible = b.registrarUsuario(us1);
+		System.out.println("registrar usuario " + us1 + esPosible);
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println(" Menu inicial:\n 1. Iniciar sesion \n 2.Registrarse \n 3. Añadir un libro "
 				+ "\n 4. Ver libros disponibles \n 5 Salir");
