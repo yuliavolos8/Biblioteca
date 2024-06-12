@@ -12,7 +12,7 @@ public class Telefono {
 		this.numero = "000000000";
 	}
 
-// comprobar si el num de telefono esta correcto
+// comprobar si el numero de telefono esta correcto
 	public void setNumero(String numero) throws Exception {
 		if (numero.length() != 9) {
 			Exception E = new Exception("Error: no tiene 9 digitos");
