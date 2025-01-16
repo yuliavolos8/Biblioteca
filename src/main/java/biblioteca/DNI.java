@@ -1,5 +1,8 @@
 package biblioteca;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class DNI {
 
 	private String dni;

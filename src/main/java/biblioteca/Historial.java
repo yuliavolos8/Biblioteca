@@ -1,8 +1,12 @@
 package biblioteca;
 
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
+import lombok.RequiredArgsConstructor;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.ArrayList;
+@SpringBootApplication
+@RequiredArgsConstructor
 public class Historial {
 
 	private Usuario usuario;
@@ -21,6 +25,7 @@ public class Historial {
 	}
 
 	public static void main(String args[]) throws Exception {
+		SpringApplication.run(Historial.class, args);
 		Usuario us1 = new Usuario("48768328W", "MARIA", " Gomez", "632074700");
 
 		Libro libro1 = new Libro(1, 1999, " Maria Blanco", " Anochecer");

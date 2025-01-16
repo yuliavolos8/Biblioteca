@@ -1,8 +1,15 @@
 package biblioteca;
 
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Collections;
+@SpringBootApplication
+@RequiredArgsConstructor
 
 public class Contrasenia {
 
@@ -59,6 +66,7 @@ public class Contrasenia {
 	}
 
 	public static void main(String[] args) {
+		SpringApplication.run(Contrasenia.class, args);
 		String miContraseña = crearContraseña();
 		System.out.println("Tu nueva contraseña es: " + miContraseña);
 	}

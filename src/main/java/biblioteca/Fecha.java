@@ -1,8 +1,13 @@
 package biblioteca;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-
+@SpringBootApplication
+@RequiredArgsConstructor
 public class Fecha {
 	private LocalDate fecha;
 
@@ -24,6 +29,7 @@ public class Fecha {
 	}
 
 	public static void main(String[] args) {
+		SpringApplication.run(Fecha.class, args);
 		Fecha miFecha = new Fecha(2, 3, 2024);
 		System.out.println("Fecha: " + miFecha);
 

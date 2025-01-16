@@ -1,7 +1,8 @@
 package biblioteca;
 
-import java.time.LocalDate;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
 public class Prestamo {
 	private Fecha fechaPrestamo;
 	private Fecha fechaDevolucion;

@@ -1,5 +1,8 @@
 package biblioteca;
 
+import lombok.RequiredArgsConstructor;
+
+
 public class Telefono {
 	private String numero;
 
